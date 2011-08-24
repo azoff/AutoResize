@@ -35,7 +35,7 @@ Here is an example using jQuery's [bind()](http://api.jquery.com/bind/) method, 
 
 Notes
 -----
-AutoResize only works with textareas, so please don't complain if your `contenteditable` elements aren't resizing when you apply this plug-in to them. This plug-in was designed to solve what should be a very simple problem, but seemingly fell short of a complete solution in many past attempts. Each auto-resizing plug-in I've tested has failed in situations where the textarea is hidden, or messes with selector logic by inserting a cloned element of the same class. AutoResize attempts to be as unobtrusive as possible, while still maintaining resilience in the face of DHTML. Use it at your own risk, please submit bug reports on the [Issue Tracker](/issues);
+AutoResize only works with textareas, so please don't complain if your `contenteditable` elements aren't resizing when you apply this plug-in to them. This plug-in was designed to solve what should be a very simple problem, but seemingly fell short of a complete solution in many past attempts. Each auto-resizing plug-in I've tested has failed in situations where the textarea is hidden, or messes with selector logic by inserting a cloned element of the same class. AutoResize attempts to be as unobtrusive as possible, while still maintaining resilience in the face of DHTML. Use it at your own risk, please submit bug reports on the [Issue Tracker](https://github.com/azoff/AutoResize/issues);
 
 **Note** AutoResize will _always_ resize your textareas to be the size of their textual content. Hence, it is good practice to set a min height (probably via CSS) on the textarea to ensure that it does not shrink beyond an acceptable size.
 
