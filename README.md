@@ -41,6 +41,12 @@ AutoResize only works with textareas, so please don't complain if your `contente
 
 **Note** AutoResize will _always_ resize your textareas to be the size of their textual content. Hence, it is good practice to set a min height (probably via CSS) on the textarea to ensure that it does not shrink beyond an acceptable size.
 
+Special Thanks
+--------------
+This plug-in would not exist if it was not for a specific need and level of quality demanded by a particular project.
+For AutoResize, that inspiration is RentJuice (<http://rentjuice.com>), which uses the plug-in in many of their new 
+features. Special thanks to RentJuice and the entire dev team for allowing this plug-in to go open-sourced!
+
 Change Log
 ----------
  * __1.0.0__
