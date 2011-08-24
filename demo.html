@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>AutoResize Demo</title>
+	<style type="text/css">
+		textarea { 
+			font-size: 12px; 
+			line-height: 1.6; 
+			min-height: 50px; 
+			width: 30%;
+			margin: 10px auto; 
+			padding: 10px; 
+			font-family: arial;
+		}
+	</style>
+</head>
+<body>
+	<textarea placeholder="type into me!"></textarea>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="jquery.autoresize.js"></script>
+	<script>
+	
+		var textarea;
+	
+		function onDomReady() {
+			textarea = jQuery('textarea').autoResize();
+			textarea.bind('autoresize:resize', onAutoResize);
+		}
+		
+		function onAutoResize(event, height) {
+			console.log('resize:', event, height);
+		}
+		
+		jQuery(document).ready(onDomReady);
+	
+	</script>
+</body>
+</html>
