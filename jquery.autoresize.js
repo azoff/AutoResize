@@ -22,8 +22,7 @@
 
 "use strict";
 
- (function(global, doc, $, plugins) {
-    var
+ (function(global, doc, $, plugins) { var
 
     ALLOWED_NODES = 'textarea',
 
@@ -45,10 +44,8 @@
         overflow: 'visible',
         height: 'auto',
         display: 'block'
-        ,
-        position: 'absolute',
-        left: '-99999px',
-        top: '-99999px'
+        // comment out this line to see the clone
+        ,position: 'absolute',left: '-99999px',top: '-99999px'
     },
 
     TARGET_STYLE_OVERRIDES = {
@@ -76,8 +73,7 @@
         return styles;
     }
 
-    function cloneTarget(target) {
-        var
+    function cloneTarget(target) { var
         clone = $(doc.createElement('div')),
         styles = extractStyles(target);
         styles = $.extend(styles, CLONE_STYLE_OVERRIDES);
@@ -93,8 +89,7 @@
         clone.html(text);
     }
 
-    function syncHeight(target, clone) {
-        var
+    function syncHeight(target, clone) { var
         cloneHeight = clone.height(),
         targetHeight = target.height();
         if (cloneHeight !== targetHeight) {
@@ -103,16 +98,14 @@
         }
     }
 
-    function resizeTarget(event) {
-        var
+    function resizeTarget(event) { var
         target = event.data.target,
         clone = event.data.clone;
         syncText(target, clone);
         syncHeight(target, clone);
     }
 
-    function autoResize(textarea) {
-        var
+    function autoResize(textarea) { var
         target = getTarget(textarea),
         clone = cloneTarget(target);
         target.bind(EVENTS, {
