@@ -31,7 +31,9 @@ Apart from regular DOM events, an auto-resized textarea emits events to inform t
 
 Here is an example using jQuery's [bind()](http://api.jquery.com/bind/) method, listening for resize:
 
-<pre>$('selector').autoresize().bind('autoresize:resize', function(e, height){ console.log(this, 'is at', height) });</pre>
+```javascript
+$('selector').autoresize().bind('autoresize:resize', function(e, height){ console.log(this, 'is at', height) });
+```
 
 Notes
 -----
