@@ -49,5 +49,5 @@ Change Log
 ----------
  * __1.0.0__
   - Out of the gate, hurrah!
- * __1.0.0__
+ * __1.1.0__
   - No more clones, long live scrollHeight!
