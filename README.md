@@ -47,7 +47,7 @@ features. Special thanks to RentJuice and the entire dev team for allowing this 
 
 Change Log
 ----------
- * __1.0.0__
-  - Out of the gate, hurrah!
  * __1.1.0__
   - No more clones, long live scrollHeight!
+ * __1.0.0__
+  - Out of the gate, hurrah!
