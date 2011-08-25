@@ -28,18 +28,18 @@
 
     EVENTS = 'keyup change paste input';
 
-    function init(textarea) { var 
+    function init(textarea) { var
         target = $(textarea),
         value = target.val(),
         height = target.val('').height(),
         scroll = textarea.scrollHeight,
-	    offset = scroll > height ? (scroll - height) : 0;
+        offset = scroll > height ? (scroll - height) : 0;
         target.data('minHeight', height);
         target.data('scrollOffset', offset);
-	    return target.val(value);
+        return target.val(value);
     }
 
-    function resize() {  var
+    function resize() { var
         target = $(this),
         targetHeight = target.height(),
         scrollOffset = target.data('scrollOffset'),
