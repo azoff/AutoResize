@@ -1,6 +1,6 @@
-AutoResize v1.1.0
+AutoResize v1.1.1
 =================
-Tuesday, August 24th 2011
+Sunday, September 25th 2011
 
 AutoResize is a jQuery Plugin that matches a textarea to the height of its text content.
 It is intended to be used with the latest version of jQuery: <http://code.jquery.com/jquery-latest.js>
@@ -47,6 +47,8 @@ features. Special thanks to RentJuice and the entire dev team for allowing this 
 
 Change Log
 ----------
+ * __1.1.1__
+  - Fixed page jump behavior on autoscroll ([issue](https://github.com/azoff/AutoResize/issues/1))
  * __1.1.0__
   - No more clones, long live scrollHeight!
  * __1.0.0__

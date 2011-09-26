@@ -1,5 +1,5 @@
 /** @license
- * AutoResize v1.1.0
+ * AutoResize v1.1.1
  *  A jQuery Plugin that matches a textarea to the height of its text content
  *  http://azoffdesign.com/autoresize
  *
@@ -13,7 +13,7 @@
  * For API documentation, see the README file
  *  https://github.com/azoff/AutoResize/blob/master/README.md
  *
- * Date: Tuesday, August 24th 2011
+ * Date: Sunday, September 25th 2011
  */
 
 /*jslint onevar: true, strict: true */
@@ -22,7 +22,7 @@
 
 "use strict";
 
- (function($, plugins) { var
+ (function($, plugins, frame) { var
 
     ALLOWED_NODES = 'textarea',
 
@@ -44,8 +44,10 @@
         targetHeight = target.height(),
         scrollOffset = target.data('scrollOffset'),
         minHeight = target.data('minHeight'),
+        scrollTop = frame.scrollTop(),
         scrollHeight = target.height(minHeight).prop('scrollHeight') - scrollOffset;
         target.height(scrollHeight);
+        frame.scrollTop(scrollTop);
         if (targetHeight !== scrollHeight) {
             target.trigger('autoresize:resize', scrollHeight);
         }
@@ -60,4 +62,4 @@
         return this.filter(ALLOWED_NODES).each(apply);
     };
 
-})(jQuery, jQuery.fn);
+})(jQuery, jQuery.fn, jQuery(window));
