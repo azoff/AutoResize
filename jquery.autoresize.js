@@ -1,5 +1,5 @@
 /** @license
- * AutoResize v1.1.1
+ * AutoResize v1.1.2
  *  A jQuery Plugin that matches a textarea to the height of its text content
  *  http://azoffdesign.com/autoresize
  *
@@ -13,7 +13,7 @@
  * For API documentation, see the README file
  *  https://github.com/azoff/AutoResize/blob/master/README.md
  *
- * Date: Sunday, September 25th 2011
+ * Date: Tuesday, October 10th 2011
  */
 
 /*jslint onevar: true, strict: true */

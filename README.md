@@ -1,6 +1,6 @@
-AutoResize v1.1.1
+AutoResize v1.1.2
 =================
-Sunday, September 25th 2011
+Tuesday, October 10th 2011
 
 AutoResize is a jQuery Plugin that matches a textarea to the height of its text content.
 It is intended to be used with the latest version of jQuery: <http://code.jquery.com/jquery-latest.js>
@@ -17,7 +17,9 @@ Dual licensed under the MIT or GPL Version 2 licenses.
 
 Usage
 -----
-`jQuery(selector).autoResize();`
+```javascript
+jQuery(selector).autoResize();
+```
 
 + `selector`
     The jQuery selector, targeting a `<textarea>` element to apply the auto resize to
@@ -32,12 +34,12 @@ Apart from regular DOM events, an auto-resized textarea emits events to inform t
 Here is an example using jQuery's [bind()](http://api.jquery.com/bind/) method, listening for resize:
 
 ```javascript
-$('selector').autoresize().bind('autoresize:resize', function(e, height){ console.log(this, 'is at', height) });
+$('selector').autoresize().bind('autoresize:resize', function(e, height){ console.log(this, 'is', height, 'px tall') });
 ```
 
 Notes
 -----
-AutoResize only works with textareas, so please don't complain if your `contenteditable` elements aren't resizing when you apply this plug-in to them. This plug-in was designed to solve what should be a very simple problem, but seemingly fell short of a complete solution in many past attempts. Each auto-resizing plug-in I've tested has failed in situations where the textarea is hidden, or messes with selector logic by inserting a cloned element of the same class. AutoResize attempts to be as unobtrusive as possible, while still maintaining resilience in the face of DHTML. Use it at your own risk, please submit bug reports on the [Issue Tracker](https://github.com/azoff/AutoResize/issues);
+AutoResize only works with textareas, so please don't complain if your `contenteditable` elements aren't resizing when you apply this plug-in to them. This plug-in was designed to solve what should be a very simple problem, but seemingly fell short of a complete solution in many past attempts. Each auto-resizing plug-in I've tested has failed in situations where the textarea is hidden, or messes with selector logic by inserting a cloned element of the same class. AutoResize attempts to be as unobtrusive as possible, while still maintaining resilience in the face of DHTML. Use it at your own risk and please submit bug reports on the [Issue Tracker](https://github.com/azoff/AutoResize/issues)
 
 Special Thanks
 --------------
@@ -47,6 +49,8 @@ features. Special thanks to RentJuice and the entire dev team for allowing this 
 
 Change Log
 ----------
+ * __1.1.1__
+  - Fixed page jump behavior on autoscroll ([issue](https://github.com/azoff/AutoResize/issues/1))
  * __1.1.1__
   - Fixed page jump behavior on autoscroll ([issue](https://github.com/azoff/AutoResize/issues/1))
  * __1.1.0__
