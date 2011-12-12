@@ -1,0 +1,37 @@
+{
+    "name": "autoresize",
+    "version": "1.1.2",
+    "title": "jQuery.autoResize()",
+    "author": {
+        "name": "Jonathan Azoff",
+        "url": "http://azoffdesign.com/about"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://raw.github.com/jquery/jquery/master/MIT-LICENSE.txt"
+        },
+        {
+            "type": "GPL",
+            "url": "https://raw.github.com/jquery/jquery/master/GPL-LICENSE.txt"
+        }
+    ],
+    "dependencies": {
+        "jquery": ">=1.7"
+    },
+    "description": "A jQuery Plugin that matches a textarea to the height of its text content",
+    "keywords": [
+        "fields", "size", "automatic", "input", "form"
+    ],
+    "homepage": "http://azoffdesign.com/autoresize",
+    "contributors": [
+        {
+            "name": "Jonathan Azoff",
+            "url": "https://github.com/azoff"
+        }
+    ],
+    "files": [
+        "jquery.autoresize.js",
+        "jquery.autoresize.min.js"
+    ]
+}
