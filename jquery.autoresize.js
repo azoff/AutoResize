@@ -36,6 +36,7 @@
         offset = scroll > height ? (scroll - height) : 0;
         target.data('minHeight', height);
         target.data('scrollOffset', offset);
+        $.browser.msie && target.css('overflow-y', 'hidden').scroll(function(){this.scrollTop = 0});
         return target.val(value);
     }
 
@@ -45,7 +46,9 @@
         scrollOffset = target.data('scrollOffset'),
         minHeight = target.data('minHeight'),
         scrollTop = frame.scrollTop(),
-        scrollHeight = target.height(minHeight).prop('scrollHeight') - scrollOffset;
+        scrollHeight;
+        $.browser.msie || target.height(minHeight);
+        scrollHeight = target.prop('scrollHeight') - scrollOffset;
         target.height(scrollHeight);
         frame.scrollTop(scrollTop);
         if (targetHeight !== scrollHeight) {
